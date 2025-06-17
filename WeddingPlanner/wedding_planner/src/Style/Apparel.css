@@ -1,0 +1,65 @@
+.apparel {
+  padding: 40px 20px;
+  background: #fff0f5;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.apparel-title {
+  font-size: 32px;
+  color: #c2185b;
+  margin-bottom: 10px;
+}
+
+.apparel-subtitle {
+  font-size: 18px;
+  color: #6a1b4d;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.apparel-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.apparel-card {
+  width: 260px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.apparel-card:hover {
+  transform: translateY(-5px);
+}
+
+.apparel-img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-bottom: 1px solid #f8bbd0;
+}
+
+.apparel-card p {
+  font-weight: 600;
+  padding: 12px;
+  color: #ad1457;
+  margin: 0;
+}
+
+.apparel-note {
+  margin-top: 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #444;
+  font-size: 16px;
+  line-height: 1.7;
+}
