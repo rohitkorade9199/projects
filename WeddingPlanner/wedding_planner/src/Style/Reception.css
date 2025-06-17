@@ -1,0 +1,62 @@
+.reception {
+  background: linear-gradient(to right, #1a1a1a, #2c003e);
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.reception-header h2 {
+  font-size: 36px;
+  color: #fce4ec;
+  margin-bottom: 10px;
+}
+
+.reception-tagline {
+  font-size: 18px;
+  color: #ff80ab;
+  margin-bottom: 40px;
+}
+
+.highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.highlight-card {
+  background-color: #2e003e;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 6px 16px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s;
+}
+
+.highlight-card:hover {
+  transform: translateY(-6px);
+}
+
+.highlight-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.highlight-card h3 {
+  font-size: 20px;
+  color: #ffb3c6;
+}
+
+.highlight-card p {
+  font-size: 14px;
+  color: #ddd;
+}
+
+.reception-footer {
+  margin-top: 50px;
+  font-style: italic;
+  font-size: 16px;
+  color: #ffc1e3;
+}

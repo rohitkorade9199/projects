@@ -1,0 +1,70 @@
+.materials-guide {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+}
+
+.materials-guide h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #1abc9c;
+}
+
+.materials-guide h2 {
+  margin-top: 2rem;
+  color: #34495e;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #1abc9c;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+.materials-guide p {
+  margin: 0.8rem 0 1.2rem;
+  line-height: 1.6;
+}
+
+.materials-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.material-card {
+  border: 1px solid #ccc;
+  padding: 1.2rem;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  transition: 0.3s;
+}
+
+.material-card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+}
+
+.material-card h3 {
+  margin-bottom: 0.6rem;
+  color: #1abc9c;
+}
+
+.resources-list {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.resources-list li {
+  margin-bottom: 0.8rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.resources-list li::before {
+  content: "📌";
+  position: absolute;
+  left: 0;
+}
