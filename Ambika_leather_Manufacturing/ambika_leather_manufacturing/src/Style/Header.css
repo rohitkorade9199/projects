@@ -1,0 +1,66 @@
+/* src/components/Shared/Header.css */
+
+/* Base header and nav styling */
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+/* Nav links styling */
+nav a {
+  margin: 0 0.75rem;
+  text-decoration: none;
+  color: #333;
+  padding: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  color: #b5651d;
+}
+
+/* Mobile hamburger toggle */
+.nav-toggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+  nav .nav-links {
+    position: fixed;
+    top: 60px;
+    right: 0;
+    background: #fff;
+    width: 0;
+    height: calc(100vh - 60px);
+    overflow: hidden;
+    transition: width 0.3s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  nav .nav-links.open {
+    width: 200px;
+  }
+  nav .nav-links a {
+    margin: 1rem;
+  }
+}
